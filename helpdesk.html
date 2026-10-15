@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assignment">
+        <meta name="keywords" content="HTML, form, tags">
+        <meta name="author" content="N.H.Nhat An"
+        <title>An</title>
+    </head>
+    <body>
+     <form>
+        <a href="http://www.swin.edu.au">
+         <img src="C:\Users\admin\Downloads\Lab\Images\logo.png" alt="Swinburne Logo">
+        </a>
+        <h1>CWA Help Desk Appointment</h1>
+        <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+        <p>Check Blackboard for when CWA tutors will be there.</p>
+        <fieldset>
+		 <legend>Student Details</legend>
+		  <p><label for="sid">Student ID</label> 
+			<input type="text" name= "sid" id="sid" maxlength="10" size="7" required="required"/>
+		  </p>
+          <p>
+            <label for="sid">Given Name</label> 
+			<input type="text" name= "GN" id="GN" maxlength="15" size="10" required="required"/>
+            <label for="sid">Family Name</label> 
+			<input type="text" name= "FN" id="FN" maxlength="15" size="10" required="required"/>
+		  </p>
+        </fieldset>
+        <fieldset>
+		 <legend>Your Unit</legend>
+		    <p>
+				<input type="radio" id="cos10011" name="your_unit" value="cos10011" required />
+                <label for="cos10011">COS10011</label> 
+				<input type="radio" id="cos60004" name="your_unit" value="cos60004"/>
+                <label for="cos60004">COS60004</label> 
+				<input type="radio" id="cos60007" name="your_unit" value="cos60007"/>
+                <label for="cos60007">COS60007</label> 
+			</p>
+            <p><label for="tutors">Tutors</label> 
+			<select name="tutors" id="tutors">
+				<option value="">Please Select</option>			
+				<option value="jacob_haavk">Jacob Haavk</option>
+				<option value="anais_desmoulins">Anais Desmoulins</option>
+				<option value="aloso_hudson">Aloso Hudson</option>
+			</select>
+        </fieldset>
+        <fieldset>
+		 <legend>Issue</legend>
+		    <p>
+				<input type="radio" id="html" name="issue" value="html"/>
+                <label for="html">HTML</label> 
+				<input type="radio" id="css" name="issue" value="css"/>
+                <label for="css">CSS</label> 
+				<input type="radio" id="java" name="issue" value="java"/>
+                <label for="java">JavaScript</label> 
+                <input type="radio" id="php" name="issue" value="php"/>
+                <label for="php">PHP</label>
+                <input type="radio" id="mysql" name="issue" value="mysql"/>
+                <label for="mysql">MySQL</label> 
+            </p>
+            <p><label for="comments">Description of Issue</label></p>
+            <p>
+			<textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+		    </p>
+        </fieldset>
+        <fieldset>
+         <legend>Preferred Date / Time</legend>
+          <p>
+           <label for="date">Date</label>
+           <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" />
+          </p>
+          <p>
+           <label for="time">Time</label>
+           <input type="time" id="time" name="time" placeholder="00:00" />
+          </p>
+        </fieldset>
+        <input type= "submit" value="Book"/>
+	    <input type= "reset" value="Reset Form"/>
+    </form>
+    </body>
+</html>
